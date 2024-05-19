@@ -6,7 +6,7 @@ module.exports = {
       fontFamily: {
         "DanaReg": "Dana Regular",
         "DanaMed": "Dana Medium",
-        "DanaBold":" Dana Bold",
+        "DanaBold":"Dana Bold",
       },
     },
   },

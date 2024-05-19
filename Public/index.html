@@ -1,15 +1,1555 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learnin English</title>
-    <link rel="stylesheet" href="/asset/app.css">
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning English</title>
+    <link rel="stylesheet" href="/asset/app.css" />
+    <link rel="stylesheet" href="/asset/swiper-bundle.min.css" />
+    <!-- Add FavIcon -->
+    <link rel="icon" href="/Image/SVG/logo.svg" type="Image/png" />
+  </head>
+  <body class="font-DanaReg">
+    <svg class="hidden">
+      <!-- Shopping Cart -->
+      <symbol
+        id="ShoppingCart"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+        />
+      </symbol>
+      <!-- Search -->
+      <symbol
+        id="searchIcon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+        />
+      </symbol>
+      <!-- Bar 3 -->
+      <symbol
+        id="Bar3"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+        />
+      </symbol>
+      <symbol
+        id="x-mark"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M6 18 18 6M6 6l12 12"
+        />
+      </symbol>
+      <symbol
+        id="chervon-down"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="m19.5 8.25-7.5 7.5-7.5-7.5"
+        />
+      </symbol>
+      <symbol
+        id="chervon-up"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="m4.5 15.75 7.5-7.5 7.5 7.5"
+        />
+      </symbol>
+      <symbol
+        id="chervon-left"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M15.75 19.5 8.25 12l7.5-7.5"
+        />
+      </symbol>
+      <symbol
+        id="chevron-left-mini"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M11.78 5.22a.75.75 0 0 1 0 1.06L8.06 10l3.72 3.72a.75.75 0 1 1-1.06 1.06l-4.25-4.25a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.06 0Z"
+          clip-rule="evenodd"
+        />
+      </symbol>
+      <symbol
+        id="chevron-right-mini"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+        class="w-5 h-5"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z"
+          clip-rule="evenodd"
+        />
+      </symbol>
 
-</head>
-<body class="bg-slate-600">
+      <symbol
+        id="time-icon"
+        viewBox="0 0 45 48"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g filter="url(#filter0_d_2_1228)">
+          <circle cx="27" cy="14" r="14" fill="#FFC700" fill-opacity="0.5" />
+          <path
+            d="M20 38.3333C12.0933 38.3333 5.66663 31.9066 5.66663 24C5.66663 16.0933 12.0933 9.66663 20 9.66663C27.9066 9.66663 34.3333 16.0933 34.3333 24C34.3333 31.9066 27.9066 38.3333 20 38.3333ZM20 11.6666C13.2 11.6666 7.66663 17.2 7.66663 24C7.66663 30.8 13.2 36.3333 20 36.3333C26.8 36.3333 32.3333 30.8 32.3333 24C32.3333 17.2 26.8 11.6666 20 11.6666Z"
+            fill="#3360FF"
+          />
+          <path
+            d="M24.9467 29.24C24.7734 29.24 24.6 29.2 24.44 29.0933L20.3067 26.6266C19.28 26.0133 18.52 24.6666 18.52 23.48V18.0133C18.52 17.4666 18.9734 17.0133 19.52 17.0133C20.0667 17.0133 20.52 17.4666 20.52 18.0133V23.48C20.52 23.96 20.92 24.6666 21.3334 24.9066L25.4667 27.3733C25.9467 27.6533 26.0934 28.2666 25.8134 28.7466C25.6134 29.0666 25.28 29.24 24.9467 29.24Z"
+            fill="#3360FF"
+          />
+        </g>
+        <defs>
+          <filter
+            id="filter0_d_2_1228"
+            x="0"
+            y="0"
+            width="45"
+            height="48"
+            filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB"
+          >
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix
+              in="SourceAlpha"
+              type="matrix"
+              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              result="hardAlpha"
+            />
+            <feOffset dy="4" />
+            <feGaussianBlur stdDeviation="2" />
+            <feComposite in2="hardAlpha" operator="out" />
+            <feColorMatrix
+              type="matrix"
+              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+            />
+            <feBlend
+              mode="normal"
+              in2="BackgroundImageFix"
+              result="effect1_dropShadow_2_1228"
+            />
+            <feBlend
+              mode="normal"
+              in="SourceGraphic"
+              in2="effect1_dropShadow_2_1228"
+              result="shape"
+            />
+          </filter>
+        </defs>
+      </symbol>
+      <!-- star -->
+      <symbol
+        id="Star"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"
+        />
+      </symbol>
+    </svg>
 
-    <p class="text-red-500">Hello</p>
-    
-</body>
+    <!-- Reportazh -->
+    <div
+      class="flex justify-center items-center w-full bg-yellow-400 h-10 font-DanaMed"
+    >
+      <span class="text-sm">شروع جشنواره 50 درصدی تا اخر آبان</span>
+    </div>
+
+    <header class="hidden md:flex flex-col items-center top-0 right-0 left-0">
+      <!-- Menu -->
+      <div
+        class="flex justify-between items-center w-full px-3 md:px-12 md:py-3"
+      >
+        <nav class="flex gap-x-5 h-14">
+          <!-- Logo -->
+          <div class="w-14 h-14">
+            <img src="/Image/SVG/logo.svg" alt="" />
+          </div>
+          <!-- navbar -->
+          <ul
+            class="flex gap-x-7 lg:gap-x-4 justify-start items-center font-DanaMed"
+          >
+            <li class="hover:text-blue-500">
+              <a href="#">صفحه اصلی</a>
+            </li>
+            <li class="hover:text-blue-500">
+              <a href="#">دوره ها</a>
+            </li>
+            <li class="hover:text-blue-500">
+              <a href="#">درباره ما</a>
+            </li>
+            <li class="hover:text-blue-500">
+              <a href="#">تماس با ما</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- left side -->
+        <div class="flex flex-row gap-x-7 justify-center items-center">
+          <!-- Search -->
+          <div>
+            <svg class="w-6 h-6">
+              <use href="#searchIcon"></use>
+            </svg>
+          </div>
+          <!-- Shopping -->
+          <div>
+            <svg class="w-6 h-6">
+              <use href="#ShoppingCart"></use>
+            </svg>
+          </div>
+          <!-- Login -->
+          <a href="#" class="px-5 py-3 rounded-lg bg-blue-500 text-white">
+            <span>ورود / ثبت نام</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Header -->
+    <div class="flex md:hidden justify-between items-center h-16 px-3 py-2">
+      <div class="nav-icon cursor-pointer">
+        <svg class="w-6 h-6">
+          <use href="#Bar3"></use>
+        </svg>
+      </div>
+
+      <!-- menu mobile -->
+      <div
+        class="menuNav flex flex-col fixed w-64 -right-64 top-0 bottom-0 px-6 transition-all bg-white z-20 overflow-y-auto"
+      >
+        <!-- close -->
+        <div class="flex justify-end py-4">
+          <svg class="close-nav w-6 h-6 cursor-pointer">
+            <use href="#x-mark"></use>
+          </svg>
+        </div>
+
+        <!-- nav -->
+        <ul class="flex flex-col gap-y-3">
+          <li>
+            <a href="#">صفحه اصلی</a>
+          </li>
+          <li>
+            <div
+              class="submenu-open-btn flex justify-between items-baseline cursor-pointer"
+            >
+              <a href="#">دوره ها</a>
+              <span>
+                <svg class="w-4 h-4">
+                  <use href="#chervon-down"></use>
+                </svg>
+              </span>
+            </div>
+
+            <div class="submenu">
+              <a href="#">ایلتس</a>
+              <a href="#">لیسینینگ</a>
+              <a href="#">المنتری</a>
+              <a href="#">استادی</a>
+            </div>
+          </li>
+          <li>
+            <a href="#">درباره ما</a>
+          </li>
+          <li>
+            <a href="#">تماس با ما</a>
+          </li>
+        </ul>
+
+        <div class="mt-5 text-blue-500">
+          <a href="#">
+            <span>ورود / ثبت نام</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- logo -->
+      <div class="w-14 h-14">
+        <img src="/Image/SVG/logo.svg" alt="" />
+      </div>
+      <!-- left side -->
+      <div class="flex gap-x-4">
+        <!-- Search -->
+        <svg class="w-6 h-6">
+          <use href="#searchIcon"></use>
+        </svg>
+        <!-- Shopping -->
+
+        <svg class="w-6 h-6">
+          <use href="#ShoppingCart"></use>
+        </svg>
+      </div>
+    </div>
+    <main>
+      <section class="">
+        <div
+          class="flex flex-col md:flex-row justify-center md:justify-around items-cente gap-28 md:gap-8 mt-10 md:mt-32 ml-3 mr-4"
+        >
+          <!-- titles -->
+          <div class="flex flex-col gap-y-10 md:px-9">
+            <div
+              class="w-[50%] text-center bg-blue-400/30 text-blue-600 rounded-full py-2 px-5 lg:text-[18px] text-sm font-DanaMed"
+            >
+              آموزش آنلاین زبان انگلیسی
+            </div>
+            <div class="text-zinc-600 text-4xl font-DanaBold">
+              آموزش آنلاین زبان با<span
+                class="block text-blue-700 text-2xl mt-3"
+                >موسسه آموزش عالی همگام</span
+              >
+            </div>
+            <p class="text-sm text-zinc-500">
+              ارائه کلاس های آنلاین و حضوری بنا به انتخاب دانشجویان در تمامی رده
+              سنی سطوح و ساعات مختلف
+            </p>
+            <div class="flex gap-x-5 font-DanaMed">
+              <button
+                class="md:px-5 md:py-3 md:text-base px-3 py-2 text-sm rounded-lg bg-blue-500 text-white hover:border hover:border-blue-500 hover:bg-white hover:text-blue-500"
+              >
+                همین حالا یادبگیر
+              </button>
+              <button
+                class="flex justify-between items-baseline md:px-5 md:py-3 md:text-base px-7 py-2 text-sm rounded-lg border border-yellow-400 hover:bg-yellow-400 transition-all"
+              >
+                <a href="#">بیشتر بدانید</a>
+                <!-- <span class="">
+                            <svg class="w-4 h-4">
+                                <use href="#chervon-left"></use>
+                            </svg>
+                        </span> -->
+              </button>
+            </div>
+          </div>
+          <!-- picture -->
+
+          <div class="m-auto">
+            <div
+              class="relative w-[300px] h-40 lg:w-[450px] lg:h-56 rounded-full bg-blue-500 border-yellow-400 border-r-8 border-b-8"
+            >
+              <img
+                src="/Image/pic1.png"
+                class="absolute h-[250px] w-[400px] lg:h-[350px] lg:w-[450px] -bottom-2"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Whay Hamgam -->
+      <section class="mb-24">
+        <div
+          class="flex flex-col-reverse md:flex-row justify-center md:justify-around items-cente gap-28 md:gap-8 mt-28 md:mt-56 ml-3 mr-4"
+        >
+          <!-- right side -->
+          <div class="m-auto">
+            <div
+              class="relative w-[400px] h-40 lg:w-[500px] lg:h-56 rounded-full bg-yellow-400 border-blue-500 border-r-8 border-b-8 -right-40 md:-right-28"
+            >
+              <img
+                src="/Image/pic2.png"
+                class="absolute h-[230px] w-[200px] lg:h-[350px] lg:w-[300px] -bottom-2 right-36 md:right-24"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <!-- left side -->
+          <div class="lg:h-[90vh]">
+            <!-- title -->
+            <div class="font-DanaBold text-2xl md:text-3xl text-blue-500">
+              چرا <span class="text-blue-700">همگام </span>را انتخاب کنیم؟
+            </div>
+            <!--category  -->
+            <div
+              class="flex flex-row flex-wrap justify-center items-center mt-10 gap-3 lg:gap-4 lg:mx-10"
+            >
+              <div
+                class="w-full sm:w-[40%] h-auto shadow-xl border border-zinc-200 px-5 py-7 lg:px-3 lg:py-7"
+              >
+                <div class="flex gap-2 items-end mb-3">
+                  <svg class="w-6 h-6">
+                    <use href="#time-icon"></use>
+                  </svg>
+                  <h3 class="font-DanaMed text-sm">صرفه جویی در زمان</h3>
+                </div>
+                <p class="text-xs lg:text-sm text-gray-600 text-justify">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                  استفاده از طراحان گرافیک است
+                </p>
+              </div>
+
+              <div
+                class="w-full sm:w-[40%] h-auto shadow-xl border border-zinc-200 px-5 py-7 lg:px-3 lg:py-7"
+              >
+                <div class="flex gap-2 items-end mb-3">
+                  <svg class="w-6 h-6">
+                    <use href="#time-icon"></use>
+                  </svg>
+                  <h3 class="font-DanaMed text-sm">صرفه جویی در زمان</h3>
+                </div>
+                <p class="text-xs lg:text-sm text-gray-600 text-justify">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                  استفاده از طراحان گرافیک است
+                </p>
+              </div>
+
+              <div
+                class="w-full sm:w-[40%] h-auto shadow-xl border border-zinc-200 px-5 py-7 lg:px-3 lg:py-7"
+              >
+                <div class="flex gap-2 items-end mb-3">
+                  <svg class="w-6 h-6">
+                    <use href="#time-icon"></use>
+                  </svg>
+                  <h3 class="font-DanaMed text-sm">صرفه جویی در زمان</h3>
+                </div>
+                <p class="text-xs lg:text-sm text-gray-600 text-justify">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                  استفاده از طراحان گرافیک است
+                </p>
+              </div>
+
+              <div
+                class="w-full sm:w-[40%] h-auto shadow-xl border border-zinc-200 px-5 py-7 lg:px-3 lg:py-7"
+              >
+                <div class="flex gap-2 items-end mb-3">
+                  <svg class="w-6 h-6">
+                    <use href="#time-icon"></use>
+                  </svg>
+                  <h3 class="font-DanaMed text-sm">صرفه جویی در زمان</h3>
+                </div>
+                <p class="text-xs lg:text-sm text-gray-600 text-justify">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                  استفاده از طراحان گرافیک است
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DoreHa -->
+      <section class="mb-24">
+        <div class="relative w-full rounded-3xl bg-blue-500 p-8">
+          <!-- header -->
+          <div class="flex justify-between p-4 lg:p-8 text-white">
+            <h3 class="font-DanaMed text-xl lg:text-2xl">دوره های آموزشی</h3>
+            <span class="flex gap-x-2 justify-center items-center">
+              دوره ها
+              <svg class="w-4 h-4">
+                <use href="#chervon-left"></use>
+              </svg>
+            </span>
+          </div>
+
+          <div class="swiper sm:grid-cols-3 lg:grid-cols-4 gap-3.5 lg:gap-5 lg:p-5 px-4 py-3"
+          >
+            <!-- Swiper -->
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <div
+                  class="bg-white rounded-xl lg:w-[260px] xl:w-[300px] md:w-[230px] sm:w-[210px] w-[150px]"
+                >
+                  <!-- image -->
+                  <div>
+                    <img
+                      src="/Image/pic5.png"
+                      class="mx-0 lg:px-2 bg-cover bg-no-repeat overflow-hidden"
+                      alt=""
+                    />
+                  </div>
+                  <div class="py-2 px-3 lg:p-5">
+                    <h6 class="text-xs lg:text-sm lg:font-DanaMed">
+                      مربیگری درجه 2 انگلیسی
+                    </h6>
+                    <span class="text-xs lg:text-sm text-gray-800"
+                      >توسط لیلا معتمدی</span
+                    >
+                    <div
+                      class="flex justify-between mt-1 lg:mt-2 lg:mb-0 items-center"
+                    >
+                      <span class="text-blue-600 text-xs lg:text-sm"
+                        ><span class="font-DanaMed">420,000 </span>تومان</span
+                      >
+                      <a href="#" class="p-1 lg:p-2 bg-blue-600 rounded-lg text-white">
+                        <svg class="w-3 lg:w-5 h-3 lg:h-5">
+                          <use href="#ShoppingCart"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="bg-white rounded-xl lg:w-[260px] xl:w-[300px] md:w-[230px] sm:w-[210px] w-[150px]"
+                >
+                  <!-- image -->
+                  <div>
+                    <img
+                      src="/Image/pic5.png"
+                      class="mx-0 lg:px-2 bg-cover bg-no-repeat overflow-hidden"
+                      alt=""
+                    />
+                  </div>
+                  <div class="py-2 px-3 lg:p-5">
+                    <h6 class="text-xs lg:text-sm lg:font-DanaMed">
+                      مربیگری درجه 2 انگلیسی
+                    </h6>
+                    <span class="text-xs lg:text-sm text-gray-800"
+                      >توسط لیلا معتمدی</span
+                    >
+                    <div
+                      class="flex justify-between mt-1 lg:mt-2 lg:mb-0 items-center"
+                    >
+                      <span class="text-blue-600 text-xs lg:text-sm"
+                        ><span class="font-DanaMed">420,000 </span>تومان</span
+                      >
+                      <a href="#" class="p-1 lg:p-2 bg-blue-600 rounded-lg text-white">
+                        <svg class="w-3 lg:w-5 h-3 lg:h-5">
+                          <use href="#ShoppingCart"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="bg-white rounded-xl lg:w-[260px] xl:w-[300px] md:w-[230px] sm:w-[210px] w-[150px]"
+                >
+                  <!-- image -->
+                  <div>
+                    <img
+                      src="/Image/pic5.png"
+                      class="mx-0 lg:px-2 bg-cover bg-no-repeat overflow-hidden"
+                      alt=""
+                    />
+                  </div>
+                  <div class="py-2 px-3 lg:p-5">
+                    <h6 class="text-xs lg:text-sm lg:font-DanaMed">
+                      مربیگری درجه 2 انگلیسی
+                    </h6>
+                    <span class="text-xs lg:text-sm text-gray-800"
+                      >توسط لیلا معتمدی</span
+                    >
+                    <div
+                      class="flex justify-between mt-1 lg:mt-2 lg:mb-0 items-center"
+                    >
+                      <span class="text-blue-600 text-xs lg:text-sm"
+                        ><span class="font-DanaMed">420,000 </span>تومان</span
+                      >
+                      <a href="#" class="p-1 lg:p-2 bg-blue-600 rounded-lg text-white">
+                        <svg class="w-3 lg:w-5 h-3 lg:h-5">
+                          <use href="#ShoppingCart"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="bg-white rounded-xl lg:w-[260px] xl:w-[300px] md:w-[230px] sm:w-[210px] w-[150px]"
+                >
+                  <!-- image -->
+                  <div>
+                    <img
+                      src="/Image/pic5.png"
+                      class="mx-0 lg:px-2 bg-cover bg-no-repeat overflow-hidden"
+                      alt=""
+                    />
+                  </div>
+                  <div class="py-2 px-3 lg:p-5">
+                    <h6 class="text-xs lg:text-sm lg:font-DanaMed">
+                      مربیگری درجه 2 انگلیسی
+                    </h6>
+                    <span class="text-xs lg:text-sm text-gray-800"
+                      >توسط لیلا معتمدی</span
+                    >
+                    <div
+                      class="flex justify-between mt-1 lg:mt-2 lg:mb-0 items-center"
+                    >
+                      <span class="text-blue-600 text-xs lg:text-sm"
+                        ><span class="font-DanaMed">420,000 </span>تومان</span
+                      >
+                      <a href="#" class="p-1 lg:p-2 bg-blue-600 rounded-lg text-white">
+                        <svg class="w-3 lg:w-5 h-3 lg:h-5">
+                          <use href="#ShoppingCart"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="bg-white rounded-xl lg:w-[260px] xl:w-[300px] md:w-[230px] sm:w-[210px] w-[150px]"
+                >
+                  <!-- image -->
+                  <div>
+                    <img
+                      src="/Image/pic5.png"
+                      class="mx-0 lg:px-2 bg-cover bg-no-repeat overflow-hidden"
+                      alt=""
+                    />
+                  </div>
+                  <div class="py-2 px-3 lg:p-5">
+                    <h6 class="text-xs lg:text-sm lg:font-DanaMed">
+                      مربیگری درجه 2 انگلیسی
+                    </h6>
+                    <span class="text-xs lg:text-sm text-gray-800"
+                      >توسط لیلا معتمدی</span
+                    >
+                    <div
+                      class="flex justify-between mt-1 lg:mt-2 lg:mb-0 items-center"
+                    >
+                      <span class="text-blue-600 text-xs lg:text-sm"
+                        ><span class="font-DanaMed">420,000 </span>تومان</span
+                      >
+                      <a href="#" class="p-1 lg:p-2 bg-blue-600 rounded-lg text-white">
+                        <svg class="w-3 lg:w-5 h-3 lg:h-5">
+                          <use href="#ShoppingCart"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="bg-white rounded-xl lg:w-[260px] xl:w-[300px] md:w-[230px] sm:w-[210px] w-[150px]"
+                >
+                  <!-- image -->
+                  <div>
+                    <img
+                      src="/Image/pic5.png"
+                      class="mx-0 lg:px-2 bg-cover bg-no-repeat overflow-hidden"
+                      alt=""
+                    />
+                  </div>
+                  <div class="py-2 px-3 lg:p-5">
+                    <h6 class="text-xs lg:text-sm lg:font-DanaMed">
+                      مربیگری درجه 2 انگلیسی
+                    </h6>
+                    <span class="text-xs lg:text-sm text-gray-800"
+                      >توسط لیلا معتمدی</span
+                    >
+                    <div
+                      class="flex justify-between mt-1 lg:mt-2 lg:mb-0 items-center"
+                    >
+                      <span class="text-blue-600 text-xs lg:text-sm"
+                        ><span class="font-DanaMed">420,000 </span>تومان</span
+                      >
+                      <a href="#" class="p-1 lg:p-2 bg-blue-600 rounded-lg text-white">
+                        <svg class="w-3 lg:w-5 h-3 lg:h-5">
+                          <use href="#ShoppingCart"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="bg-white rounded-xl lg:w-[260px] xl:w-[300px] md:w-[230px] sm:w-[210px] w-[150px]"
+                >
+                  <!-- image -->
+                  <div>
+                    <img
+                      src="/Image/pic5.png"
+                      class="mx-0 lg:px-2 bg-cover bg-no-repeat overflow-hidden"
+                      alt=""
+                    />
+                  </div>
+                  <div class="py-2 px-3 lg:p-5">
+                    <h6 class="text-xs lg:text-sm lg:font-DanaMed">
+                      مربیگری درجه 2 انگلیسی
+                    </h6>
+                    <span class="text-xs lg:text-sm text-gray-800"
+                      >توسط لیلا معتمدی</span
+                    >
+                    <div
+                      class="flex justify-between mt-1 lg:mt-2 lg:mb-0 items-center"
+                    >
+                      <span class="text-blue-600 text-xs lg:text-sm"
+                        ><span class="font-DanaMed">420,000 </span>تومان</span
+                      >
+                      <a href="#" class="p-1 lg:p-2 bg-blue-600 rounded-lg text-white">
+                        <svg class="w-3 lg:w-5 h-3 lg:h-5">
+                          <use href="#ShoppingCart"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div
+                  class="bg-white rounded-xl lg:w-[260px] xl:w-[300px] md:w-[230px] sm:w-[210px] w-[150px]"
+                >
+                  <!-- image -->
+                  <div>
+                    <img
+                      src="/Image/pic5.png"
+                      class="mx-0 lg:px-2 bg-cover bg-no-repeat overflow-hidden"
+                      alt=""
+                    />
+                  </div>
+                  <div class="py-2 px-3 lg:p-5">
+                    <h6 class="text-xs lg:text-sm lg:font-DanaMed">
+                      مربیگری درجه 2 انگلیسی
+                    </h6>
+                    <span class="text-xs lg:text-sm text-gray-800"
+                      >توسط لیلا معتمدی</span
+                    >
+                    <div
+                      class="flex justify-between mt-1 lg:mt-2 lg:mb-0 items-center"
+                    >
+                      <span class="text-blue-600 text-xs lg:text-sm"
+                        ><span class="font-DanaMed">420,000 </span>تومان</span
+                      >
+                      <a href="#" class="p-1 lg:p-2 bg-blue-600 rounded-lg text-white">
+                        <svg class="w-3 lg:w-5 h-3 lg:h-5">
+                          <use href="#ShoppingCart"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Teachers -->
+      <section class="mb-24">
+        <div class="p-5">
+          <!-- header -->
+
+          <div class="flex justify-between p-4 lg:p-8 text-blue-700">
+            <h3 class="font-DanaMed text-xl lg:text-2xl">بهترین اساتید ما</h3>
+            <span class="flex gap-x-2 justify-center items-center">
+              دوره ها
+              <svg class="w-4 h-4">
+                <use href="#chervon-left"></use>
+              </svg>
+            </span>
+          </div>
+
+          <div
+            class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3.5 md:gap-5 mt-5"
+          >
+            <div
+              class="flex justify-center flex-col items-center py-6 p-2 md:p-5 bg-white rounded-2xl shadow-md"
+            >
+              <!-- Image Product -->
+              <div class="relative mb-2 md:mb-5">
+                <img
+                  src="/Image/teacher.png"
+                  class="w-32 mx-auto md:w-auto rounded-full mt-7"
+                  alt="p1"
+                />
+                <span
+                  class="absolute top-0 -left-8 lg:-left-10 h-5 md:h-[25px] text-xs/[24px] md:text-sm/[28px] bg-blue-500/45 text-blue-600 px-2.5 md:px-3 rounded-full"
+                  >تایید شده</span
+                >
+              </div>
+              <!-- Title Product -->
+              <h5 class="font-DanaBold text-sm md:text-xl mb-2">
+                استاد مریم موسوی
+              </h5>
+              <!-- Star Icon -->
+              <div class="flex text-yellow-400">
+                <svg
+                  class="w-3 h-3 md:w-4 md:h-4 text-gray-300 dark:text-gray-400"
+                >
+                  <use href="#Star"></use>
+                </svg>
+                <svg class="w-3 h-3 md:w-4 md:h-4">
+                  <use href="#Star"></use>
+                </svg>
+                <svg class="w-3 h-3 md:w-4 md:h-4">
+                  <use href="#Star"></use>
+                </svg>
+                <svg class="w-3 h-3 md:w-4 md:h-4">
+                  <use href="#Star"></use>
+                </svg>
+                <svg class="w-3 h-3 md:w-4 md:h-4">
+                  <use href="#Star"></use>
+                </svg>
+              </div>
+              <!-- Price Product -->
+              <div class="text-center font-DanaMed text-gray-700 text-xs mt-3">
+                برگزاری کلاس های آنلاین و حضوری با بیش از سه سال سابقه کار
+              </div>
+            </div>
+
+            <div
+              class="flex justify-center flex-col items-center py-6 p-2 md:p-5 bg-white rounded-2xl shadow-md"
+            >
+              <!-- Image Product -->
+              <div class="relative mb-2 md:mb-5">
+                <img
+                  src="/Image/teacher.png"
+                  class="w-32 mx-auto md:w-auto rounded-full mt-7"
+                  alt="p1"
+                />
+                <span
+                  class="absolute top-0 -left-8 lg:-left-10 h-5 md:h-[25px] text-xs/[24px] md:text-sm/[28px] bg-blue-500/45 text-blue-600 px-2.5 md:px-3 rounded-full"
+                  >تایید شده</span
+                >
+              </div>
+              <!-- Title Product -->
+              <h5 class="font-DanaBold text-sm md:text-xl mb-2">
+                استاد مریم موسوی
+              </h5>
+              <!-- Star Icon -->
+              <div class="flex text-yellow-400">
+                <svg
+                  class="w-3 h-3 md:w-4 md:h-4 text-gray-300 dark:text-gray-400"
+                >
+                  <use href="#Star"></use>
+                </svg>
+                <svg class="w-3 h-3 md:w-4 md:h-4">
+                  <use href="#Star"></use>
+                </svg>
+                <svg class="w-3 h-3 md:w-4 md:h-4">
+                  <use href="#Star"></use>
+                </svg>
+                <svg class="w-3 h-3 md:w-4 md:h-4">
+                  <use href="#Star"></use>
+                </svg>
+                <svg class="w-3 h-3 md:w-4 md:h-4">
+                  <use href="#Star"></use>
+                </svg>
+              </div>
+              <!-- Price Product -->
+              <div class="text-center font-DanaMed text-gray-700 text-xs mt-3">
+                برگزاری کلاس های آنلاین و حضوری با بیش از سه سال سابقه کار
+              </div>
+            </div>
+
+            <div
+              class="flex justify-center flex-col items-center py-6 p-2 md:p-5 bg-white rounded-2xl shadow-md"
+            >
+              <!-- Image Product -->
+              <div class="relative mb-2 md:mb-5">
+                <img
+                  src="/Image/teacher.png"
+                  class="w-32 mx-auto md:w-auto rounded-full mt-7"
+                  alt="p1"
+                />
+                <span
+                  class="absolute top-0 -left-8 lg:-left-10 h-5 md:h-[25px] text-xs/[24px] md:text-sm/[28px] bg-blue-500/45 text-blue-600 px-2.5 md:px-3 rounded-full"
+                  >تایید شده</span
+                >
+              </div>
+              <!-- Title Product -->
+              <h5 class="font-DanaBold text-sm md:text-xl mb-2">
+                استاد مریم موسوی
+              </h5>
+              <!-- Star Icon -->
+              <div class="flex text-yellow-400">
+                <svg
+                  class="w-3 h-3 md:w-4 md:h-4 text-gray-300 dark:text-gray-400"
+                >
+                  <use href="#Star"></use>
+                </svg>
+                <svg class="w-3 h-3 md:w-4 md:h-4">
+                  <use href="#Star"></use>
+                </svg>
+                <svg class="w-3 h-3 md:w-4 md:h-4">
+                  <use href="#Star"></use>
+                </svg>
+                <svg class="w-3 h-3 md:w-4 md:h-4">
+                  <use href="#Star"></use>
+                </svg>
+                <svg class="w-3 h-3 md:w-4 md:h-4">
+                  <use href="#Star"></use>
+                </svg>
+              </div>
+              <!-- Price Product -->
+              <div class="text-center font-DanaMed text-gray-700 text-xs mt-3">
+                برگزاری کلاس های آنلاین و حضوری با بیش از سه سال سابقه کار
+              </div>
+            </div>
+
+            <div
+              class="flex justify-center flex-col items-center py-6 p-2 md:p-5 bg-white rounded-2xl shadow-md"
+            >
+              <!-- Image Product -->
+              <div class="relative mb-2 md:mb-5">
+                <img
+                  src="/Image/teacher.png"
+                  class="w-32 mx-auto md:w-auto rounded-full mt-7"
+                  alt="p1"
+                />
+                <span
+                  class="absolute top-0 -left-8 lg:-left-10 h-5 md:h-[25px] text-xs/[24px] md:text-sm/[28px] bg-blue-500/45 text-blue-600 px-2.5 md:px-3 rounded-full"
+                  >تایید شده</span
+                >
+              </div>
+              <!-- Title Product -->
+              <h5 class="font-DanaBold text-sm md:text-xl mb-2">
+                استاد مریم موسوی
+              </h5>
+              <!-- Star Icon -->
+              <div class="flex text-yellow-400">
+                <svg
+                  class="w-3 h-3 md:w-4 md:h-4 text-gray-300 dark:text-gray-400"
+                >
+                  <use href="#Star"></use>
+                </svg>
+                <svg class="w-3 h-3 md:w-4 md:h-4">
+                  <use href="#Star"></use>
+                </svg>
+                <svg class="w-3 h-3 md:w-4 md:h-4">
+                  <use href="#Star"></use>
+                </svg>
+                <svg class="w-3 h-3 md:w-4 md:h-4">
+                  <use href="#Star"></use>
+                </svg>
+                <svg class="w-3 h-3 md:w-4 md:h-4">
+                  <use href="#Star"></use>
+                </svg>
+              </div>
+              <!-- Price Product -->
+              <div class="text-center font-DanaMed text-gray-700 text-xs mt-3">
+                برگزاری کلاس های آنلاین و حضوری با بیش از سه سال سابقه کار
+              </div>
+            </div>
+
+            <div
+              class="flex justify-center flex-col items-center py-6 p-2 md:p-5 bg-white rounded-2xl shadow-md"
+            >
+              <!-- Image Product -->
+              <div class="relative mb-2 md:mb-5">
+                <img
+                  src="/Image/teacher.png"
+                  class="w-32 mx-auto md:w-auto rounded-full mt-7"
+                  alt="p1"
+                />
+                <span
+                  class="absolute top-0 -left-8 lg:-left-10 h-5 md:h-[25px] text-xs/[24px] md:text-sm/[28px] bg-blue-500/45 text-blue-600 px-2.5 md:px-3 rounded-full"
+                  >تایید شده</span
+                >
+              </div>
+              <!-- Title Product -->
+              <h5 class="font-DanaBold text-sm md:text-xl mb-2">
+                استاد مریم موسوی
+              </h5>
+              <!-- Star Icon -->
+              <div class="flex text-yellow-400">
+                <svg
+                  class="w-3 h-3 md:w-4 md:h-4 text-gray-300 dark:text-gray-400"
+                >
+                  <use href="#Star"></use>
+                </svg>
+                <svg class="w-3 h-3 md:w-4 md:h-4">
+                  <use href="#Star"></use>
+                </svg>
+                <svg class="w-3 h-3 md:w-4 md:h-4">
+                  <use href="#Star"></use>
+                </svg>
+                <svg class="w-3 h-3 md:w-4 md:h-4">
+                  <use href="#Star"></use>
+                </svg>
+                <svg class="w-3 h-3 md:w-4 md:h-4">
+                  <use href="#Star"></use>
+                </svg>
+              </div>
+              <!-- Price Product -->
+              <div class="text-center font-DanaMed text-gray-700 text-xs mt-3">
+                برگزاری کلاس های آنلاین و حضوری با بیش از سه سال سابقه کار
+              </div>
+            </div>
+
+            <div
+              class="flex justify-center flex-col items-center py-6 p-2 md:p-5 bg-white rounded-2xl shadow-md"
+            >
+              <!-- Image Product -->
+              <div class="relative mb-2 md:mb-5">
+                <img
+                  src="/Image/teacher.png"
+                  class="w-32 mx-auto md:w-auto rounded-full mt-7"
+                  alt="p1"
+                />
+                <span
+                  class="absolute top-0 -left-8 lg:-left-10 h-5 md:h-[25px] text-xs/[24px] md:text-sm/[28px] bg-blue-500/45 text-blue-600 px-2.5 md:px-3 rounded-full"
+                  >تایید شده</span
+                >
+              </div>
+              <!-- Title Product -->
+              <h5 class="font-DanaBold text-sm md:text-xl mb-2">
+                استاد مریم موسوی
+              </h5>
+              <!-- Star Icon -->
+              <div class="flex text-yellow-400">
+                <svg
+                  class="w-3 h-3 md:w-4 md:h-4 text-gray-300 dark:text-gray-400"
+                >
+                  <use href="#Star"></use>
+                </svg>
+                <svg class="w-3 h-3 md:w-4 md:h-4">
+                  <use href="#Star"></use>
+                </svg>
+                <svg class="w-3 h-3 md:w-4 md:h-4">
+                  <use href="#Star"></use>
+                </svg>
+                <svg class="w-3 h-3 md:w-4 md:h-4">
+                  <use href="#Star"></use>
+                </svg>
+                <svg class="w-3 h-3 md:w-4 md:h-4">
+                  <use href="#Star"></use>
+                </svg>
+              </div>
+              <!-- Price Product -->
+              <div class="text-center font-DanaMed text-gray-700 text-xs mt-3">
+                برگزاری کلاس های آنلاین و حضوری با بیش از سه سال سابقه کار
+              </div>
+            </div>
+
+            <div
+              class="flex justify-center flex-col items-center py-6 p-2 md:p-5 bg-white rounded-2xl shadow-md"
+            >
+              <!-- Image Product -->
+              <div class="relative mb-2 md:mb-5">
+                <img
+                  src="/Image/teacher.png"
+                  class="w-32 mx-auto md:w-auto rounded-full mt-7"
+                  alt="p1"
+                />
+                <span
+                  class="absolute top-0 -left-8 lg:-left-10 h-5 md:h-[25px] text-xs/[24px] md:text-sm/[28px] bg-blue-500/45 text-blue-600 px-2.5 md:px-3 rounded-full"
+                  >تایید شده</span
+                >
+              </div>
+              <!-- Title Product -->
+              <h5 class="font-DanaBold text-sm md:text-xl mb-2">
+                استاد مریم موسوی
+              </h5>
+              <!-- Star Icon -->
+              <div class="flex text-yellow-400">
+                <svg
+                  class="w-3 h-3 md:w-4 md:h-4 text-gray-300 dark:text-gray-400"
+                >
+                  <use href="#Star"></use>
+                </svg>
+                <svg class="w-3 h-3 md:w-4 md:h-4">
+                  <use href="#Star"></use>
+                </svg>
+                <svg class="w-3 h-3 md:w-4 md:h-4">
+                  <use href="#Star"></use>
+                </svg>
+                <svg class="w-3 h-3 md:w-4 md:h-4">
+                  <use href="#Star"></use>
+                </svg>
+                <svg class="w-3 h-3 md:w-4 md:h-4">
+                  <use href="#Star"></use>
+                </svg>
+              </div>
+              <!-- Price Product -->
+              <div class="text-center font-DanaMed text-gray-700 text-xs mt-3">
+                برگزاری کلاس های آنلاین و حضوری با بیش از سه سال سابقه کار
+              </div>
+            </div>
+
+            <div
+              class="flex justify-center flex-col items-center py-6 p-2 md:p-5 bg-white rounded-2xl shadow-md"
+            >
+              <!-- Image Product -->
+              <div class="relative mb-2 md:mb-5">
+                <img
+                  src="/Image/teacher.png"
+                  class="w-32 mx-auto md:w-auto rounded-full mt-7"
+                  alt="p1"
+                />
+                <span
+                  class="absolute top-0 -left-8 lg:-left-10 h-5 md:h-[25px] text-xs/[24px] md:text-sm/[28px] bg-blue-500/45 text-blue-600 px-2.5 md:px-3 rounded-full"
+                  >تایید شده</span
+                >
+              </div>
+              <!-- Title Product -->
+              <h5 class="font-DanaBold text-sm md:text-xl mb-2">
+                استاد مریم موسوی
+              </h5>
+              <!-- Star Icon -->
+              <div class="flex text-yellow-400">
+                <svg
+                  class="w-3 h-3 md:w-4 md:h-4 text-gray-300 dark:text-gray-400"
+                >
+                  <use href="#Star"></use>
+                </svg>
+                <svg class="w-3 h-3 md:w-4 md:h-4">
+                  <use href="#Star"></use>
+                </svg>
+                <svg class="w-3 h-3 md:w-4 md:h-4">
+                  <use href="#Star"></use>
+                </svg>
+                <svg class="w-3 h-3 md:w-4 md:h-4">
+                  <use href="#Star"></use>
+                </svg>
+                <svg class="w-3 h-3 md:w-4 md:h-4">
+                  <use href="#Star"></use>
+                </svg>
+              </div>
+              <!-- Price Product -->
+              <div class="text-center font-DanaMed text-gray-700 text-xs mt-3">
+                برگزاری کلاس های آنلاین و حضوری با بیش از سه سال سابقه کار
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Slider -->
+      <section class="mb-24">
+        <div class="relative flex flex-col w-ful">
+          <div class="absolute m-auto w-full z-30">
+            <div class="flex justify-between px-8 py-5">
+              <h3 class="font-DanaMed text-xl lg:text-2xl">نظرات دانشجویان</h3>
+              <div
+                class="flex justify-center items-center gap-x-3 md:gap-x-[18px]"
+              >
+                <div
+                  class="swiper-button-next-custom flex justify-center text-center items-center w-9 h-9 md:w-10 md:h-10 bg-yellow-200 text-zinc-700 rounded-full shadow-Custom hover:bg-gray-300 transition-all cursor-pointer"
+                >
+                  <svg class="w-5 h-5 md:w-[26px] md:h-[26px]">
+                    <use href="#chevron-right-mini"></use>
+                  </svg>
+                </div>
+                <div
+                  class="swiper-button-prev-custom flex justify-center text-center items-center w-9 h-9 md:w-10 md:h-10 bg-yellow-300 text-zinc-700 rounded-full shadow-Custom hover:bg-gray-300 transition-all cursor-pointer"
+                >
+                  <svg class="w-5 h-5 md:w-[26px] md:h-[26px]">
+                    <use href="#chevron-left-mini"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- shape -->
+          <div
+            class="relative w-[100%] h-[25vh] sm:h-[40vh] lg:w-[50%] lg:h-[45vh] rounded-full bg-yellow-400 -right-40 md:-right-28 z-0"
+          ></div>
+
+          <!-- slider -->
+          <div class="absolute w-full top-16 px-8 py-3">
+            <div class="swiper z-20">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="p-5 bg-white rounded-lg">
+                    <div class="flex items-center gap-2">
+                      <img src="/Image/pic6.png" alt="" />
+                      <span class="font-DanaMed text-xs sm:text-base"
+                        >دانشجو لیلا موسوی</span
+                      >
+                    </div>
+                    <div class="pt-5 text-xs sm:text-sm text-gray-700">
+                      عالی بود، خیلی ممنون از دوره های خوبتون
+                    </div>
+                    <!-- Star Icon -->
+                    <div class="flex text-yellow-400 pt-4">
+                      <svg
+                        class="w-3 h-3 md:w-4 md:h-4 text-gray-300 dark:text-gray-400"
+                      >
+                        <use href="#Star"></use>
+                      </svg>
+                      <svg class="w-3 h-3 md:w-4 md:h-4">
+                        <use href="#Star"></use>
+                      </svg>
+                      <svg class="w-3 h-3 md:w-4 md:h-4">
+                        <use href="#Star"></use>
+                      </svg>
+                      <svg class="w-3 h-3 md:w-4 md:h-4">
+                        <use href="#Star"></use>
+                      </svg>
+                      <svg class="w-3 h-3 md:w-4 md:h-4">
+                        <use href="#Star"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="p-5 bg-white rounded-lg">
+                    <div class="flex items-center gap-2">
+                      <img src="/Image/pic6.png" alt="" />
+                      <span class="font-DanaMed text-xs sm:text-base"
+                        >دانشجو لیلا موسوی</span
+                      >
+                    </div>
+                    <div class="pt-5 text-xs sm:text-sm text-gray-700">
+                      عالی بود، خیلی ممنون از دوره های خوبتون
+                    </div>
+                    <!-- Star Icon -->
+                    <div class="flex text-yellow-400 pt-4">
+                      <svg
+                        class="w-3 h-3 md:w-4 md:h-4 text-gray-300 dark:text-gray-400"
+                      >
+                        <use href="#Star"></use>
+                      </svg>
+                      <svg class="w-3 h-3 md:w-4 md:h-4">
+                        <use href="#Star"></use>
+                      </svg>
+                      <svg class="w-3 h-3 md:w-4 md:h-4">
+                        <use href="#Star"></use>
+                      </svg>
+                      <svg class="w-3 h-3 md:w-4 md:h-4">
+                        <use href="#Star"></use>
+                      </svg>
+                      <svg class="w-3 h-3 md:w-4 md:h-4">
+                        <use href="#Star"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="p-5 bg-white rounded-lg">
+                    <div class="flex items-center gap-2">
+                      <img src="/Image/pic6.png" alt="" />
+                      <span class="font-DanaMed text-xs sm:text-base"
+                        >دانشجو لیلا موسوی</span
+                      >
+                    </div>
+                    <div class="pt-5 text-xs sm:text-sm text-gray-700">
+                      عالی بود، خیلی ممنون از دوره های خوبتون
+                    </div>
+                    <!-- Star Icon -->
+                    <div class="flex text-yellow-400 pt-4">
+                      <svg
+                        class="w-3 h-3 md:w-4 md:h-4 text-gray-300 dark:text-gray-400"
+                      >
+                        <use href="#Star"></use>
+                      </svg>
+                      <svg class="w-3 h-3 md:w-4 md:h-4">
+                        <use href="#Star"></use>
+                      </svg>
+                      <svg class="w-3 h-3 md:w-4 md:h-4">
+                        <use href="#Star"></use>
+                      </svg>
+                      <svg class="w-3 h-3 md:w-4 md:h-4">
+                        <use href="#Star"></use>
+                      </svg>
+                      <svg class="w-3 h-3 md:w-4 md:h-4">
+                        <use href="#Star"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="p-5 bg-white rounded-lg">
+                    <div class="flex items-center gap-2">
+                      <img src="/Image/pic6.png" alt="" />
+                      <span class="font-DanaMed text-xs sm:text-base"
+                        >دانشجو لیلا موسوی</span
+                      >
+                    </div>
+                    <div class="pt-5 text-xs sm:text-sm text-gray-700">
+                      عالی بود، خیلی ممنون از دوره های خوبتون
+                    </div>
+                    <!-- Star Icon -->
+                    <div class="flex text-yellow-400 pt-4">
+                      <svg
+                        class="w-3 h-3 md:w-4 md:h-4 text-gray-300 dark:text-gray-400"
+                      >
+                        <use href="#Star"></use>
+                      </svg>
+                      <svg class="w-3 h-3 md:w-4 md:h-4">
+                        <use href="#Star"></use>
+                      </svg>
+                      <svg class="w-3 h-3 md:w-4 md:h-4">
+                        <use href="#Star"></use>
+                      </svg>
+                      <svg class="w-3 h-3 md:w-4 md:h-4">
+                        <use href="#Star"></use>
+                      </svg>
+                      <svg class="w-3 h-3 md:w-4 md:h-4">
+                        <use href="#Star"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="p-5 bg-white rounded-lg">
+                    <div class="flex items-center gap-2">
+                      <img src="/Image/pic6.png" alt="" />
+                      <span class="font-DanaMed text-xs sm:text-base"
+                        >دانشجو لیلا موسوی</span
+                      >
+                    </div>
+                    <div class="pt-5 text-xs sm:text-sm text-gray-700">
+                      عالی بود، خیلی ممنون از دوره های خوبتون
+                    </div>
+                    <!-- Star Icon -->
+                    <div class="flex text-yellow-400 pt-4">
+                      <svg
+                        class="w-3 h-3 md:w-4 md:h-4 text-gray-300 dark:text-gray-400"
+                      >
+                        <use href="#Star"></use>
+                      </svg>
+                      <svg class="w-3 h-3 md:w-4 md:h-4">
+                        <use href="#Star"></use>
+                      </svg>
+                      <svg class="w-3 h-3 md:w-4 md:h-4">
+                        <use href="#Star"></use>
+                      </svg>
+                      <svg class="w-3 h-3 md:w-4 md:h-4">
+                        <use href="#Star"></use>
+                      </svg>
+                      <svg class="w-3 h-3 md:w-4 md:h-4">
+                        <use href="#Star"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="p-5 bg-white rounded-lg">
+                    <div class="flex items-center gap-2">
+                      <img src="/Image/pic6.png" alt="" />
+                      <span class="font-DanaMed text-xs sm:text-base"
+                        >دانشجو لیلا موسوی</span
+                      >
+                    </div>
+                    <div class="pt-5 text-xs sm:text-sm text-gray-700">
+                      عالی بود، خیلی ممنون از دوره های خوبتون
+                    </div>
+                    <!-- Star Icon -->
+                    <div class="flex text-yellow-400 pt-4">
+                      <svg
+                        class="w-3 h-3 md:w-4 md:h-4 text-gray-300 dark:text-gray-400"
+                      >
+                        <use href="#Star"></use>
+                      </svg>
+                      <svg class="w-3 h-3 md:w-4 md:h-4">
+                        <use href="#Star"></use>
+                      </svg>
+                      <svg class="w-3 h-3 md:w-4 md:h-4">
+                        <use href="#Star"></use>
+                      </svg>
+                      <svg class="w-3 h-3 md:w-4 md:h-4">
+                        <use href="#Star"></use>
+                      </svg>
+                      <svg class="w-3 h-3 md:w-4 md:h-4">
+                        <use href="#Star"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="p-5 bg-white rounded-lg">
+                    <div class="flex items-center gap-2">
+                      <img src="/Image/pic6.png" alt="" />
+                      <span class="font-DanaMed text-xs sm:text-base"
+                        >دانشجو لیلا موسوی</span
+                      >
+                    </div>
+                    <div class="pt-5 text-xs sm:text-sm text-gray-700">
+                      عالی بود، خیلی ممنون از دوره های خوبتون
+                    </div>
+                    <!-- Star Icon -->
+                    <div class="flex text-yellow-400 pt-4">
+                      <svg
+                        class="w-3 h-3 md:w-4 md:h-4 text-gray-300 dark:text-gray-400"
+                      >
+                        <use href="#Star"></use>
+                      </svg>
+                      <svg class="w-3 h-3 md:w-4 md:h-4">
+                        <use href="#Star"></use>
+                      </svg>
+                      <svg class="w-3 h-3 md:w-4 md:h-4">
+                        <use href="#Star"></use>
+                      </svg>
+                      <svg class="w-3 h-3 md:w-4 md:h-4">
+                        <use href="#Star"></use>
+                      </svg>
+                      <svg class="w-3 h-3 md:w-4 md:h-4">
+                        <use href="#Star"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class="bg-blue-500 rounded-t-3xl bottom-0 p-8 md:p-11 sm:mt-[62px] mt-36"
+    >
+      <div
+        class="flex flex-col md:flex-row justify-between items-center gap-y-7 md:gap-x-10"
+      >
+        <div>
+          <img
+            src="/Image/SVG/logo.svg"
+            class="w-14 h-14 md:w-16 md:h-16"
+            alt=""
+          />
+          <p
+            class="text-sm/[22px] md:text-base/[24px] max-w-[450px] text-justify"
+          >
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+            استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در
+            ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+            کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+          </p>
+        </div>
+        <!-- Quik access -->
+        <div class="flex gap-10 md:gap-10">
+          <div class="flex flex-col gap-y-4 mt-6">
+            <h4 class="font-DanaMed text-sm md:text-lg">دسترسی سریع</h4>
+            <div class="flex flex-col gap-y-4 text-xs md:text-sm">
+              <a href="">دوره ها</a>
+              <a href="">حساب کاربری</a>
+              <a href="">درباره ما</a>
+              <a href="">تماس با ما</a>
+            </div>
+          </div>
+          <!-- info -->
+          <div class="flex flex-col gap-y-4 mt-6">
+            <h4 class="font-DanaMed text-sm md:text-lg">اطلاعات تماس</h4>
+            <div class="flex flex-col gap-y-4 text-xs md:text-sm">
+              <a href="#">تلفن : ۰۲۱۲۴۵۰۵۸۲۰</a>
+              <a href="#">تلگرام: ۰۹۱۴۰۲۸۰۶۵۸</a>
+              <a href="#">واتساپ: ۰۹۱۴۰۲۸۰۶۵۸</a>
+              <a href="#">ایمیل: hamgam@gmail.com </a>
+            </div>
+          </div>
+        </div>
+        <!-- Enamad -->
+        <div class="bg-white rounded-lg p-2  md:mt-20 mt-5 mr-60 sm:mr-0">
+          <img
+            src="/Image/enamad.png"
+            class="w-14 h-16 lg:w-28 lg:h-28"
+            alt=""
+          />
+        </div>
+      </div>
+    </footer>
+    <div
+      class="flex justify-center items-center w-full bg-yellow-400 h-10 font-DanaMed"
+    >
+      <span class="text-sm"
+        >تمام حقوق این وبسایت متعلق به موسسه همگام است.</span
+      >
+    </div>
+
+    <script src="/Script/app.js"></script>
+    <script src="/Script/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".swiper", {
+        slidesPerView: 2,
+        spaceBetween: 14,
+        loop: true,
+        autoplay: {
+          delay: 3000,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next-custom",
+          prevEl: ".swiper-button-prev-custom",
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 3,
+            spaceBetween: 14,
+          },
+          760: {
+            lidesPerView: 3,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+        },
+      });
+    </script>
+  </body>
 </html>
